@@ -1,7 +1,7 @@
 # 🔴 Pokédex AI V2
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge)
 ![REST API](https://img.shields.io/badge/REST-API-009688?style=for-the-badge)
 ![Generative AI](https://img.shields.io/badge/Generative-AI-8A2BE2?style=for-the-badge)
@@ -17,34 +17,34 @@ O projeto permite conversar com uma Pokédex inteligente capaz de identificar Po
 
 O objetivo da **Pokédex AI V2** é demonstrar, de forma prática, como integrar:
 
-* APIs REST
-* Inteligência Artificial Generativa
-* Large Language Models (LLMs)
-* Engenharia de Prompt
-* Processamento de dados
-* Gerenciamento de estado
-* Interface web com Python
-* Segurança de variáveis de ambiente
+- APIs REST
+- Inteligência Artificial Generativa
+- Large Language Models (LLMs)
+- Engenharia de Prompt
+- Processamento de dados
+- Gerenciamento de estado
+- Interface web com Python
+- Segurança de variáveis de ambiente
 
-A aplicação utiliza dados da **PokéAPI** como contexto para fornecer informações estruturadas ao modelo de linguagem e gerar respostas mais contextualizadas sobre cada Pokémon.
+A aplicação utiliza dados da **PokéAPI** como contexto para fornecer informações estruturadas ao modelo de linguagem e gerar respostas contextualizadas sobre cada Pokémon.
 
 ---
 
 ## ✨ Funcionalidades
 
-* 🔎 Identificação automática do Pokémon citado na pergunta
-* 🖼️ Exibição da imagem oficial disponível na PokéAPI
-* 📊 Consulta de stats
-* ⚡ Consulta de tipos
-* 🧬 Linha evolutiva
-* 🛡️ Fraquezas, resistências e imunidades
-* 🎯 Consulta de habilidades
-* 📏 Altura e peso
-* 🤖 Respostas geradas por IA utilizando Groq
-* 💬 Histórico de conversa com `st.session_state`
-* 🔐 Proteção da API Key
-* 🛡️ Proteção básica contra Prompt Injection
-* 🌐 Consumo de dados externos via API REST
+- 🔎 Identificação automática do Pokémon citado na pergunta
+- 🖼️ Exibição da imagem oficial disponível na PokéAPI
+- 📊 Consulta de stats
+- ⚡ Consulta de tipos
+- 🧬 Linha evolutiva
+- 🛡️ Fraquezas, resistências e imunidades
+- 🎯 Consulta de habilidades
+- 📏 Altura e peso
+- 🤖 Respostas geradas por IA utilizando Groq
+- 💬 Histórico de conversa com `st.session_state`
+- 🔐 Proteção da API Key
+- 🛡️ Proteção básica contra Prompt Injection
+- 🌐 Consumo de dados externos via API REST
 
 ---
 
@@ -109,7 +109,7 @@ A aplicação utiliza uma arquitetura baseada em **API + processamento Python + 
              ▼                             ▼
       ┌─────────────┐               ┌─────────────┐
       │   PokéAPI   │               │  Groq API   │
-      │ Dados       │               │     LLM     │
+      │    Dados    │               │     LLM     │
       └──────┬──────┘               └──────┬──────┘
              │                             │
              └─────────────┬───────────────┘
@@ -124,29 +124,25 @@ A aplicação utiliza uma arquitetura baseada em **API + processamento Python + 
 
 ## 🚀 Tecnologias Utilizadas
 
-| Tecnologia       | Utilização                             |
-| ---------------- | -------------------------------------- |
-| Python           | Linguagem principal                    |
-| Streamlit        | Interface web                          |
-| Groq             | Inferência do modelo de IA             |
-| PokéAPI          | Fonte de dados dos Pokémon             |
-| Requests         | Consumo de APIs REST                   |
-| python-dotenv    | Gerenciamento de variáveis de ambiente |
-| st.session_state | Histórico da conversa                  |
+| Tecnologia | Utilização |
+| --- | --- |
+| Python | Linguagem principal |
+| Streamlit | Interface web |
+| Groq | Inferência do modelo de IA |
+| PokéAPI | Fonte de dados dos Pokémon |
+| Requests | Consumo de APIs REST |
+| python-dotenv | Gerenciamento de variáveis de ambiente |
+| st.session_state | Histórico da conversa |
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```text
-pokedex_ai_v2/
+PokedexAi/
 │
-├── .streamlit/
-│   └── config.toml
-│
-├── .env.example
-├── .gitignore
 ├── app.py
+├── config.toml
 ├── requirements.txt
 └── README.md
 ```
@@ -159,24 +155,24 @@ Arquivo principal da aplicação.
 
 Responsável por:
 
-* Interface Streamlit
-* Processamento das perguntas
-* Comunicação com a PokéAPI
-* Integração com Groq
-* Gerenciamento do histórico
-* Construção do contexto enviado ao LLM
+- Interface Streamlit
+- Processamento das perguntas
+- Comunicação com a PokéAPI
+- Integração com Groq
+- Gerenciamento do histórico
+- Construção do contexto enviado ao LLM
 
 ### `requirements.txt`
 
-Contém todas as dependências necessárias para executar o projeto.
+Contém as dependências necessárias para executar o projeto.
 
-### `.env.example`
+### `config.toml`
 
-Arquivo de exemplo demonstrando quais variáveis de ambiente precisam ser configuradas.
+Arquivo de configuração utilizado pela aplicação.
 
-### `.gitignore`
+### `README.md`
 
-Impede que arquivos sensíveis e desnecessários sejam enviados ao GitHub.
+Documentação principal do projeto.
 
 ---
 
@@ -185,13 +181,13 @@ Impede que arquivos sensíveis e desnecessários sejam enviados ao GitHub.
 ## 1. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/pokedex_ai_v2.git
+git clone https://github.com/renatwo/PokedexAi.git
 ```
 
-Entre na pasta:
+Entre na pasta do projeto:
 
 ```bash
-cd pokedex_ai_v2
+cd PokedexAi
 ```
 
 ---
@@ -210,11 +206,18 @@ Ative o ambiente:
 .\.venv\Scripts\Activate.ps1
 ```
 
+### Linux / macOS
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
 ---
 
 ## 3. Instale as dependências
 
-```powershell
+```bash
 pip install -r requirements.txt
 ```
 
@@ -222,19 +225,15 @@ pip install -r requirements.txt
 
 ## 4. Configure a chave da Groq
 
-Faça uma cópia do arquivo:
-
-```text
-.env.example
-```
-
-Renomeie para:
+Crie um arquivo chamado:
 
 ```text
 .env
 ```
 
-Depois configure sua chave:
+Na raiz do projeto.
+
+Depois adicione:
 
 ```env
 GROQ_API_KEY=sua_chave_da_groq_aqui
@@ -242,13 +241,21 @@ GROQ_API_KEY=sua_chave_da_groq_aqui
 
 > ⚠️ Nunca envie sua chave de API real para um repositório público.
 
-O arquivo `.env` deve permanecer no `.gitignore`.
+É recomendado adicionar o arquivo `.env` ao `.gitignore`.
+
+Exemplo:
+
+```gitignore
+.env
+.venv/
+__pycache__/
+```
 
 ---
 
 ## 5. Execute a aplicação
 
-```powershell
+```bash
 streamlit run app.py
 ```
 
@@ -292,30 +299,31 @@ Quais tipos são fortes contra Gengar?
 
 # 🛡️ Segurança
 
-O projeto utiliza algumas boas práticas básicas de segurança.
+O projeto utiliza práticas básicas de segurança para evitar a exposição de credenciais e reduzir tentativas simples de manipulação das instruções da IA.
 
 ## 🔐 Variáveis de ambiente
 
-A chave da Groq é armazenada através da variável:
+A chave da Groq é carregada através da variável:
 
 ```env
 GROQ_API_KEY
 ```
 
-A credencial não fica hardcoded diretamente no código.
+Isso evita manter a credencial diretamente no código-fonte.
 
 ---
 
-## 🚫 `.gitignore`
+## 🚫 Proteção de credenciais
 
-Arquivos contendo credenciais e informações locais não devem ser enviados ao GitHub.
+Arquivos contendo credenciais e configurações locais não devem ser enviados ao GitHub.
 
-Exemplo:
+Exemplo recomendado de `.gitignore`:
 
 ```gitignore
 .env
 .venv/
 __pycache__/
+*.pyc
 ```
 
 ---
@@ -324,7 +332,7 @@ __pycache__/
 
 A aplicação possui proteção básica contra tentativas de manipulação das instruções internas enviadas ao modelo.
 
-> As proteções utilizadas têm finalidade educacional e não substituem mecanismos avançados de segurança para aplicações em produção.
+> As proteções utilizadas possuem finalidade educacional e não substituem mecanismos avançados de segurança utilizados em aplicações de produção.
 
 ---
 
@@ -332,96 +340,88 @@ A aplicação possui proteção básica contra tentativas de manipulação das i
 
 Este projeto demonstra conhecimentos relacionados a:
 
-* Python
-* APIs REST
-* JSON
-* Inteligência Artificial Generativa
-* Large Language Models
-* Engenharia de Prompt
-* Integração de APIs
-* Manipulação de dados
-* Gerenciamento de sessão
-* Streamlit
-* Variáveis de ambiente
-* Segurança de API Keys
-* Prompt Injection
-* Contextualização de LLM com dados externos
+- Python
+- APIs REST
+- JSON
+- Inteligência Artificial Generativa
+- Large Language Models
+- Engenharia de Prompt
+- Integração de APIs
+- Manipulação de dados
+- Gerenciamento de sessão
+- Streamlit
+- Variáveis de ambiente
+- Segurança de API Keys
+- Prompt Injection
+- Contextualização de LLM com dados externos
 
 ---
 
 # 📸 Screenshots
 
-Uma boa prática para o portfólio é adicionar imagens da aplicação funcionando.
+Como evolução do projeto, poderão ser adicionadas imagens demonstrando a aplicação em funcionamento.
 
-Crie uma pasta:
-
-```text
-docs/
-```
-
-Exemplo:
+Estrutura sugerida:
 
 ```text
-pokedex_ai_v2/
+PokedexAi/
 │
 ├── docs/
 │   ├── pokedex-home.png
 │   └── pokedex-chat.png
 │
 ├── app.py
+├── config.toml
 ├── requirements.txt
 └── README.md
 ```
 
-## 🏠 Tela Principal
+Exemplo de utilização no README:
 
 ```markdown
 ![Pokédex AI](./docs/pokedex-home.png)
-```
-
-## 💬 Conversa com a IA
-
-```markdown
-![Chat Pokédex](./docs/pokedex-chat.png)
 ```
 
 ---
 
 # 🚧 Roadmap
 
-### Implementado
+## ✅ Implementado
 
-* [x] Integração com PokéAPI
-* [x] Integração com Groq
-* [x] Interface Streamlit
-* [x] Histórico de conversa
-* [x] Consulta de tipos
-* [x] Consulta de habilidades
-* [x] Consulta de stats
-* [x] Linha evolutiva
-* [x] Fraquezas e resistências
-* [x] Proteção da API Key
-* [x] Proteção básica contra Prompt Injection
+- [x] Integração com PokéAPI
+- [x] Integração com Groq
+- [x] Interface Streamlit
+- [x] Histórico de conversa
+- [x] Consulta de tipos
+- [x] Consulta de habilidades
+- [x] Consulta de stats
+- [x] Linha evolutiva
+- [x] Fraquezas e resistências
+- [x] Proteção da API Key
+- [x] Proteção básica contra Prompt Injection
 
-### Próximas melhorias
+## 🔜 Próximas melhorias
 
-* [ ] Comparação entre dois Pokémon
-* [ ] Sistema de batalha utilizando IA
-* [ ] Cache de consultas da PokéAPI
-* [ ] Memória persistente
-* [ ] Separação do projeto em módulos
-* [ ] Testes automatizados
-* [ ] Deploy público
-* [ ] Suporte a múltiplos modelos de IA
+- [ ] Comparação entre dois Pokémon
+- [ ] Sistema de batalha utilizando IA
+- [ ] Cache de consultas da PokéAPI
+- [ ] Memória persistente
+- [ ] Separação do projeto em módulos
+- [ ] Testes automatizados
+- [ ] Deploy público
+- [ ] Suporte a múltiplos modelos de IA
+- [ ] Adicionar screenshots da aplicação
+- [ ] Criar `.gitignore`
+- [ ] Criar `.env.example`
 
 ---
 
 # 🔮 Possível Evolução da Arquitetura
 
-Uma evolução futura do projeto pode separar as responsabilidades em módulos.
+Uma evolução futura do projeto poderá separar as responsabilidades em diferentes módulos.
 
 ```text
-pokedex_ai_v2/
+PokedexAi/
 │
 ├── services/
 │   ├── pokeapi.py
@@ -433,6 +433,10 @@ pokedex_ai_v2/
 ├── .streamlit/
 │   └── config.toml
 │
+├── docs/
+│   ├── pokedex-home.png
+│   └── pokedex-chat.png
+│
 ├── app.py
 ├── requirements.txt
 ├── .env.example
@@ -440,13 +444,14 @@ pokedex_ai_v2/
 └── README.md
 ```
 
-Isso facilitaria:
+Essa organização facilitaria:
 
-* Manutenção do código
-* Testes
-* Escalabilidade
-* Reutilização de funções
-* Separação de responsabilidades
+- Manutenção do código
+- Testes automatizados
+- Escalabilidade
+- Reutilização de funções
+- Separação de responsabilidades
+- Evolução do projeto
 
 ---
 
@@ -466,10 +471,14 @@ A **PokéAPI** funciona como fonte estruturada de dados, enquanto o **LLM execut
 
 Essa arquitetura demonstra como:
 
-**APIs + Python + LLMs podem trabalhar em conjunto para criar aplicações inteligentes baseadas em dados externos.**
+> **APIs + Python + LLMs podem trabalhar em conjunto para criar aplicações inteligentes baseadas em dados externos.**
+
+Além do desenvolvimento da aplicação, o projeto permite praticar conceitos importantes de engenharia de software, documentação técnica, segurança de credenciais e integração entre serviços externos.
 
 ---
 
 ## 📄 Licença
 
 Projeto desenvolvido para fins educacionais e de portfólio.
+
+---
